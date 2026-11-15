@@ -141,10 +141,4 @@ The frontend's current cash graph is a receivables forecast from invoice amounts
 - **Other production work:** OTP/real server authentication, private file storage, automated reminders, PDF reports, deployment hardening, and full frontend integration of several backend routes remain future work.
 - **Interest and eligibility:** Interest calculations are illustrative, and supplier eligibility is not independently verified. Get qualified legal/accounting review before relying on these figures or sending legal notices.
 
-## GitHub and secrets
 
-Commit `.env.example`, but **never commit `.env` or a real Gemini API key**. The backend `.gitignore` excludes `.env`, the virtual environment, Python caches, and local database files. Before pushing, review the staged changes and make sure no passwords, API keys, or private invoice data are included.
-
-## License
-
-No license is specified in this repository yet.
