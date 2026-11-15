@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190a2a"/>
+      <stop offset="40%" stop-color="#2d1348"/>
+      <stop offset="80%" stop-color="#12061e"/>
+      <stop offset="100%" stop-color="#0a0312"/>
+    </linearGradient>
+    <radialGradient id="ambientWarmth" cx="65%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffb02e" stop-opacity="0.38"/>
+      <stop offset="40%" stop-color="#ff7a2f" stop-opacity="0.2"/>
+      <stop offset="80%" stop-color="#3a1670" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#090512" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shelfWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a2511"/>
+      <stop offset="50%" stop-color="#321608"/>
+      <stop offset="100%" stop-color="#1d0c04"/>
+    </linearGradient>
+    <linearGradient id="counterWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#80431a"/>
+      <stop offset="25%" stop-color="#5a2e10"/>
+      <stop offset="70%" stop-color="#3b1b08"/>
+      <stop offset="100%" stop-color="#200d04"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e89d6e"/>
+      <stop offset="60%" stop-color="#c8794c"/>
+      <stop offset="100%" stop-color="#9a522c"/>
+    </linearGradient>
+    <linearGradient id="vest" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3e1b69"/>
+      <stop offset="70%" stop-color="#220b3c"/>
+      <stop offset="100%" stop-color="#130524"/>
+    </linearGradient>
+    <linearGradient id="kurta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4e0"/>
+      <stop offset="70%" stop-color="#e2cfb0"/>
+      <stop offset="100%" stop-color="#bba382"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe6a8"/>
+      <stop offset="50%" stop-color="#ffb02e"/>
+      <stop offset="100%" stop-color="#c7610a"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Wall -->
+  <rect width="1200" height="800" fill="url(#bgWall)"/>
+  <rect width="1200" height="800" fill="url(#ambientWarmth)"/>
+
+  <!-- Shop Shelves in Background (Auto Spares, boxes, filters, hardware) -->
+  <g opacity="0.85">
+    <!-- Shelf Uprights -->
+    <rect x="50" y="40" width="16" height="580" fill="#241107" rx="3"/>
+    <rect x="360" y="40" width="16" height="580" fill="#241107" rx="3"/>
+    <rect x="680" y="40" width="16" height="580" fill="#241107" rx="3"/>
+    <rect x="1000" y="40" width="16" height="580" fill="#241107" rx="3"/>
+
+    <!-- Horizontal Shelves -->
+    <!-- Shelf 1 (Top) -->
+    <rect x="40" y="110" width="1120" height="18" fill="url(#shelfWood)" rx="3"/>
+    <!-- Items on Shelf 1 -->
+    <rect x="75" y="65" width="45" height="45" fill="#c73e1d" rx="4"/>
+    <rect x="125" y="55" width="60" height="55" fill="#ffb02e" rx="4"/>
+    <rect x="190" y="70" width="40" height="40" fill="#2e7d32" rx="4"/>
+    <rect x="235" y="60" width="55" height="50" fill="#1565c0" rx="4"/>
+    <rect x="390" y="50" width="70" height="60" fill="#d87a2a" rx="4"/>
+    <rect x="465" y="62" width="50" height="48" fill="#4527a0" rx="4"/>
+    <rect x="520" y="55" width="40" height="55" fill="#f57c00" rx="4"/>
+    <rect x="710" y="52" width="65" height="58" fill="#c2185b" rx="4"/>
+    <rect x="780" y="60" width="48" height="50" fill="#00838f" rx="4"/>
+    <rect x="835" y="68" width="52" height="42" fill="#558b2f" rx="4"/>
+    <rect x="1030" y="55" width="60" height="55" fill="#e65100" rx="4"/>
+
+    <!-- Shelf 2 -->
+    <rect x="40" y="220" width="1120" height="18" fill="url(#shelfWood)" rx="3"/>
+    <!-- Auto parts, oil canisters, brake disc boxes -->
+    <g transform="translate(70, 140)">
+      <rect x="0" y="10" width="75" height="70" fill="#ff8a3d" rx="5"/>
+      <circle cx="37" cy="45" r="20" fill="#3b1b08" opacity="0.4"/>
+      <rect x="85" y="5" width="80" height="75" fill="#fbc02d" rx="5"/>
+      <rect x="175" y="15" width="55" height="65" fill="#e53935" rx="5"/>
+      <rect x="235" y="20" width="65" height="60" fill="#1e88e5" rx="5"/>
+      <rect x="330" y="8" width="90" height="72" fill="#43a047" rx="5"/>
+      <rect x="430" y="12" width="65" height="68" fill="#8e24aa" rx="5"/>
+      <rect x="645" y="10" width="80" height="70" fill="#fb8c00" rx="5"/>
+      <rect x="735" y="5" width="70" height="75" fill="#039be5" rx="5"/>
+      <rect x="815" y="18" width="85" height="62" fill="#d81b60" rx="5"/>
+      <rect x="950" y="10" width="75" height="70" fill="#fdd835" rx="5"/>
+    </g>
+
+    <!-- Shelf 3 -->
+    <rect x="40" y="340" width="1120" height="18" fill="url(#shelfWood)" rx="3"/>
+    <!-- Stacked parts & spare boxes -->
+    <g transform="translate(65, 255)">
+      <rect x="0" y="15" width="90" height="70" fill="#3949ab" rx="4"/>
+      <rect x="98" y="10" width="85" height="75" fill="#00897b" rx="4"/>
+      <rect x="190" y="20" width="100" height="65" fill="#d32f2f" rx="4"/>
+      <rect x="320" y="12" width="70" height="73" fill="#f57c00" rx="4"/>
+      <rect x="660" y="15" width="95" height="70" fill="#5e35b1" rx="4"/>
+      <rect x="765" y="8" width="85" height="77" fill="#fbc02d" rx="4"/>
+      <rect x="860" y="18" width="90" height="67" fill="#00acc1" rx="4"/>
+      <rect x="960" y="14" width="70" height="71" fill="#7cb342" rx="4"/>
+    </g>
+
+    <!-- Shelf 4 -->
+    <rect x="40" y="470" width="1120" height="18" fill="url(#shelfWood)" rx="3"/>
+    <g transform="translate(60, 375)">
+      <rect x="10" y="20" width="120" height="75" fill="#c25e1a" rx="4"/>
+      <rect x="140" y="15" width="110" height="80" fill="#2b580c" rx="4"/>
+      <rect x="260" y="25" width="95" height="70" fill="#301b52" rx="4"/>
+      <rect x="680" y="18" width="115" height="77" fill="#8c2a3e" rx="4"/>
+      <rect x="805" y="10" width="130" height="85" fill="#1b4965" rx="4"/>
+      <rect x="945" y="22" width="100" height="73" fill="#d48a12" rx="4"/>
+    </g>
+  </g>
+
+  <!-- Brass Bell / Traditional Ganesha Frame on wall -->
+  <g transform="translate(560, 160)">
+    <rect x="0" y="0" width="60" height="75" fill="#3a1c00" rx="6" stroke="#ffb02e" stroke-width="2"/>
+    <circle cx="30" cy="30" r="16" fill="url(#brass)"/>
+    <path d="M 22 55 Q 30 46 38 55" stroke="#ffb02e" stroke-width="2" fill="none"/>
+    <circle cx="30" cy="62" r="3" fill="#ff4d6d"/>
+  </g>
+
+  <!-- Shop Owner Figure (Smiling Indian Shopkeeper at his counter) -->
+  <!-- Centered / slightly right at x: 800, y: 220 to 650 -->
+  <g transform="translate(240, 10)">
+    <!-- Back Glow behind shopkeeper -->
+    <circle cx="620" cy="320" r="190" fill="#ffb02e" opacity="0.18" filter="url(#softGlow)"/>
+
+    <!-- Shoulders & Torso / Kurta -->
+    <path d="M 450 430 Q 620 380 790 430 L 830 680 L 410 680 Z" fill="url(#kurta)"/>
+    
+    <!-- Nehru Waistcoat / Sadri (Rich Dark Maroon/Purple with Gold Trim) -->
+    <path d="M 470 440 Q 620 395 770 440 L 795 680 L 640 680 L 635 520 L 605 520 L 600 680 L 445 680 Z" fill="url(#vest)"/>
+    <!-- Vest buttons & golden piping -->
+    <path d="M 620 440 L 620 680" stroke="#ffd27a" stroke-width="2.5" stroke-dasharray="1 18" stroke-linecap="round"/>
+    <path d="M 470 440 Q 620 395 770 440" stroke="#ffd27a" stroke-width="2" fill="none"/>
+    <!-- Pen in waistcoat pocket -->
+    <rect x="525" y="475" width="40" height="5" fill="#ffd27a" rx="2"/>
+    <rect x="535" y="460" width="5" height="22" fill="#ffb02e" rx="1"/>
+    <rect x="550" y="462" width="4" height="20" fill="#3ddc97" rx="1"/>
+
+    <!-- Collar & Neck -->
+    <path d="M 575 360 Q 620 390 665 360 L 660 420 Q 620 440 580 420 Z" fill="url(#skin)"/>
+    <path d="M 570 405 Q 620 435 670 405" stroke="#fff3e0" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+    <!-- Head and Face -->
+    <g transform="translate(620, 290)">
+      <!-- Ears -->
+      <ellipse cx="-72" cy="0" rx="13" ry="22" fill="url(#skin)"/>
+      <ellipse cx="72" cy="0" rx="13" ry="22" fill="url(#skin)"/>
+      
+      <!-- Head Base -->
+      <ellipse cx="0" cy="-10" rx="68" ry="85" fill="url(#skin)"/>
+      
+      <!-- Hair (Neat black hair with subtle grey temples) -->
+      <path d="M -72 -15 Q -65 -90 0 -95 Q 65 -90 72 -15 Q 65 -55 0 -65 Q -65 -55 -72 -15 Z" fill="#180e07"/>
+      <!-- Sideburns -->
+      <path d="M -70 -20 L -68 15 L -60 10 L -62 -20 Z" fill="#2a1810"/>
+      <path d="M 70 -20 L 68 15 L 60 10 L 62 -20 Z" fill="#2a1810"/>
+
+      <!-- Forehead Tilak (Traditional auspicious red chandan mark) -->
+      <rect x="-3" y="-55" width="6" height="15" fill="#ff4d6d" rx="2"/>
+      <circle cx="0" cy="-35" r="2.5" fill="#ffd27a"/>
+
+      <!-- Eyebrows (Expressive, warm) -->
+      <path d="M -48 -25 Q -30 -35 -14 -24" stroke="#1f1109" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <path d="M 14 -24 Q 30 -35 48 -25" stroke="#1f1109" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+      <!-- Eyes (Crinkling with genuine warm smile) -->
+      <!-- Left Eye -->
+      <path d="M -45 -12 Q -30 -22 -15 -12" stroke="#251206" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M -45 -12 Q -30 -2 -15 -12" stroke="#251206" stroke-width="1.5" fill="#fff" opacity="0.8"/>
+      <circle cx="-30" cy="-10" r="4.5" fill="#321b0f"/>
+      <circle cx="-29" cy="-12" r="1.5" fill="#ffffff"/>
+      <!-- Laugh lines -->
+      <path d="M -48 -14 Q -55 -10 -52 -4" stroke="#a45831" stroke-width="1.8" fill="none"/>
+
+      <!-- Right Eye -->
+      <path d="M 15 -12 Q 30 -22 45 -12" stroke="#251206" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      <path d="M 15 -12 Q 30 -2 45 -12" stroke="#251206" stroke-width="1.5" fill="#fff" opacity="0.8"/>
+      <circle cx="30" cy="-10" r="4.5" fill="#321b0f"/>
+      <circle cx="31" cy="-12" r="1.5" fill="#ffffff"/>
+      <!-- Laugh lines -->
+      <path d="M 48 -14 Q 55 -10 52 -4" stroke="#a45831" stroke-width="1.8" fill="none"/>
+
+      <!-- Nose -->
+      <path d="M 0 -20 Q 3 5 0 14" stroke="#aa5e34" stroke-width="3.5" fill="none"/>
+      <path d="M -12 10 Q 0 20 12 10" stroke="#aa5e34" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- Mustache (Traditional well-groomed Indian shopkeeper mustache) -->
+      <path d="M -36 28 Q -15 20 0 26 Q 15 20 36 28 Q 40 36 24 35 Q 0 34 -24 35 Q -40 36 -36 28 Z" fill="#1b0f07"/>
+
+      <!-- Big Warm Smile & Teeth -->
+      <path d="M -26 36 Q 0 54 26 36 Q 18 50 0 51 Q -18 50 -26 36 Z" fill="#7a1a1c"/>
+      <path d="M -18 37 Q 0 44 18 37 Q 14 42 0 43 Q -14 42 -18 37 Z" fill="#fffdfa"/>
+      
+      <!-- Cheeks Warmth -->
+      <ellipse cx="-40" cy="5" rx="14" ry="8" fill="#ff7a2f" opacity="0.25" filter="url(#softGlow)"/>
+      <ellipse cx="40" cy="5" rx="14" ry="8" fill="#ff7a2f" opacity="0.25" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- Arms resting on counter -->
+    <!-- Left Forearm -->
+    <path d="M 440 500 Q 400 580 430 630 L 520 630 Q 510 560 480 490 Z" fill="url(#kurta)"/>
+    <!-- Right Forearm -->
+    <path d="M 800 500 Q 840 580 810 630 L 720 630 Q 730 560 760 490 Z" fill="url(#kurta)"/>
+    <!-- Hands clasped warmly on counter -->
+    <path d="M 440 610 Q 490 595 540 615 Q 560 635 520 645 L 430 635 Z" fill="url(#skin)"/>
+    <path d="M 800 610 Q 750 595 700 615 Q 680 635 720 645 L 810 635 Z" fill="url(#skin)"/>
+    <circle cx="530" cy="625" r="4" fill="#ffd27a"/> <!-- Gold ring on finger -->
+  </g>
+
+  <!-- Wooden Shop Counter in Foreground -->
+  <g>
+    <!-- Counter Top Surface -->
+    <polygon points="0,570 1200,570 1200,615 0,615" fill="url(#counterWood)"/>
+    <!-- Glass counter protector shine -->
+    <polygon points="0,570 1200,570 1200,574 0,574" fill="#ffd27a" opacity="0.6"/>
+    <polygon points="100,572 450,572 380,574 80,574" fill="#ffffff" opacity="0.4"/>
+    
+    <!-- Counter Front Wooden Paneling -->
+    <rect x="0" y="615" width="1200" height="185" fill="#2b1407"/>
+    <!-- Paneling grooves -->
+    <rect x="80" y="635" width="300" height="150" fill="#1a0a03" stroke="#4a2511" stroke-width="3" rx="6"/>
+    <rect x="450" y="635" width="300" height="150" fill="#1a0a03" stroke="#4a2511" stroke-width="3" rx="6"/>
+    <rect x="820" y="635" width="300" height="150" fill="#1a0a03" stroke="#4a2511" stroke-width="3" rx="6"/>
+  </g>
+
+  <!-- Items on the Shop Counter -->
+  <g>
+    <!-- Traditional Brass Agarbatti (Incense) Stand & Smoke -->
+    <g transform="translate(180, 545)">
+      <polygon points="10,25 30,25 25,15 15,15" fill="url(#brass)"/>
+      <line x1="20" y1="15" x2="26" y2="-10" stroke="#8d4004" stroke-width="2"/>
+      <circle cx="26" cy="-10" r="1.5" fill="#ff4d6d"/>
+      <path d="M 26 -10 Q 32 -30 22 -45 Q 15 -60 28 -80" stroke="#fff" stroke-width="1.2" opacity="0.3" fill="none"/>
+    </g>
+
+    <!-- Traditional Calculator -->
+    <g transform="translate(260, 540)">
+      <rect x="0" y="0" width="85" height="55" fill="#1c2321" rx="6" stroke="#4a5568" stroke-width="1.5"/>
+      <rect x="8" y="6" width="69" height="16" fill="#8cb369" rx="2"/>
+      <text x="70" y="19" font-family="monospace" font-size="11" fill="#1c2321" text-anchor="end" font-weight="bold">45,312.00</text>
+      <!-- Buttons grid -->
+      <g fill="#374151">
+        <rect x="8" y="27" width="14" height="9" rx="1.5"/>
+        <rect x="26" y="27" width="14" height="9" rx="1.5"/>
+        <rect x="44" y="27" width="14" height="9" rx="1.5"/>
+        <rect x="62" y="27" width="15" height="9" rx="1.5" fill="#ff7a2f"/>
+        <rect x="8" y="40" width="14" height="9" rx="1.5"/>
+        <rect x="26" y="40" width="14" height="9" rx="1.5"/>
+        <rect x="44" y="40" width="14" height="9" rx="1.5"/>
+        <rect x="62" y="40" width="15" height="9" rx="1.5" fill="#ffb02e"/>
+      </g>
+    </g>
+
+    <!-- Paper Bill / Invoice pad -->
+    <g transform="translate(370, 550) rotate(-6)">
+      <rect x="0" y="0" width="95" height="60" fill="#fff9eb" rx="3" stroke="#e0cdb2" stroke-width="1"/>
+      <line x1="12" y1="12" x2="80" y2="12" stroke="#ffb02e" stroke-width="2"/>
+      <line x1="12" y1="20" x2="65" y2="20" stroke="#c0a688" stroke-width="1"/>
+      <line x1="12" y1="28" x2="75" y2="28" stroke="#c0a688" stroke-width="1"/>
+      <line x1="12" y1="36" x2="55" y2="36" stroke="#c0a688" stroke-width="1"/>
+      <!-- Brass paperweight -->
+      <circle cx="78" cy="18" r="8" fill="url(#brass)"/>
+    </g>
+
+    <!-- Pen stand with pens -->
+    <g transform="translate(485, 535)">
+      <rect x="0" y="15" width="28" height="35" fill="#2a163e" rx="4" stroke="#ffb02e" stroke-width="1"/>
+      <line x1="8" y1="18" x2="3" y2="-12" stroke="#1565c0" stroke-width="3" stroke-linecap="round"/>
+      <line x1="16" y1="18" x2="16" y2="-15" stroke="#ff4d6d" stroke-width="3" stroke-linecap="round"/>
+      <line x1="22" y1="18" x2="28" y2="-8" stroke="#2e7d32" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Ambient Light Rays & Vignette -->
+  <rect width="1200" height="800" fill="url(#ambientWarmth)" opacity="0.4"/>
+</svg>
