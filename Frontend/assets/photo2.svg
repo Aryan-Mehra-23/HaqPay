@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140726"/>
+      <stop offset="50%" stop-color="#2a103c"/>
+      <stop offset="100%" stop-color="#0a0314"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="60%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffb02e" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#ff7a2f" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#090512" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="p2skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e89d6e"/>
+      <stop offset="60%" stop-color="#c8794c"/>
+      <stop offset="100%" stop-color="#9a522c"/>
+    </linearGradient>
+    <linearGradient id="bahiKhataCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c02626"/>
+      <stop offset="50%" stop-color="#8e1212"/>
+      <stop offset="100%" stop-color="#5a0808"/>
+    </linearGradient>
+    <linearGradient id="ledgerPaper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff5dd"/>
+      <stop offset="100%" stop-color="#faecc8"/>
+    </linearGradient>
+    <linearGradient id="phoneBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#374151"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="p2blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#p2bg)"/>
+  <rect width="800" height="600" fill="url(#lampGlow)"/>
+
+  <!-- Background Office Details: Files & Wall Calendar -->
+  <g opacity="0.6">
+    <!-- Shelves with box files -->
+    <rect x="40" y="50" width="720" height="14" fill="#321608" rx="2"/>
+    <rect x="70" y="64" width="7" height="120" fill="#321608"/>
+    <rect x="360" y="64" width="7" height="120" fill="#321608"/>
+    <rect x="40" y="180" width="720" height="14" fill="#321608" rx="2"/>
+    
+    <!-- Box files labeled Accounts, Invoices, GST -->
+    <rect x="90" y="75" width="30" height="105" fill="#4b5563" rx="2"/>
+    <rect x="125" y="75" width="28" height="105" fill="#1e3a8a" rx="2"/>
+    <rect x="157" y="75" width="32" height="105" fill="#78350f" rx="2"/>
+    <rect x="193" y="75" width="28" height="105" fill="#166534" rx="2"/>
+    
+    <!-- Wall Calendar marked "5th" -->
+    <g transform="translate(620, 70)">
+      <rect x="0" y="0" width="90" height="95" fill="#fdfbf7" rx="4" stroke="#d97706" stroke-width="1.5"/>
+      <rect x="0" y="0" width="90" height="25" fill="#b91c1c" rx="4"/>
+      <text x="45" y="17" font-family="'DM Sans', sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="bold">OCTOBER</text>
+      <text x="45" y="68" font-family="'Fraunces', serif" font-size="36" fill="#b91c1c" text-anchor="middle" font-weight="900">5</text>
+      <!-- Red circle around 5 -->
+      <circle cx="45" cy="56" r="24" stroke="#ff4d6d" stroke-width="2.5" fill="none" stroke-dasharray="3 3"/>
+    </g>
+  </g>
+
+  <!-- Desk Surface -->
+  <polygon points="0,380 800,380 800,600 0,600" fill="#2b1407"/>
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#ffb02e" stroke-width="2" opacity="0.6"/>
+
+  <!-- Ramesh ji: Shop owner on the phone writing in a ledger -->
+  <g transform="translate(260, 110)">
+    <!-- Body / Shirt -->
+    <path d="M 50 330 Q 180 270 300 330 L 320 490 L 30 490 Z" fill="#e2d2ba"/>
+    <!-- Brown Sweater Vest -->
+    <path d="M 70 340 Q 180 290 280 340 L 290 490 L 195 490 L 195 400 L 165 400 L 165 490 L 60 490 Z" fill="#451a03"/>
+    <path d="M 125 345 L 180 405 L 235 345" stroke="#fff9eb" stroke-width="3" fill="none"/>
+
+    <!-- Neck & Head (leaning forward, neck slightly turned toward left shoulder holding phone) -->
+    <path d="M 155 250 L 155 310 Q 180 325 205 310 L 205 250 Z" fill="url(#p2skin)"/>
+
+    <!-- Head -->
+    <g transform="translate(180, 200) rotate(7)">
+      <!-- Left Ear & Phone Ear Area -->
+      <ellipse cx="-64" cy="5" rx="11" ry="18" fill="url(#p2skin)"/>
+      <ellipse cx="64" cy="5" rx="11" ry="18" fill="url(#p2skin)"/>
+      
+      <!-- Skull -->
+      <ellipse cx="0" cy="0" rx="60" ry="74" fill="url(#p2skin)"/>
+      
+      <!-- Hair -->
+      <path d="M -64 -5 Q -55 -75 0 -78 Q 55 -75 64 -5 Q 55 -45 0 -52 Q -55 -45 -64 -5 Z" fill="#180e07"/>
+
+      <!-- Eyebrows (Furrowed in concentration / listening intently) -->
+      <path d="M -40 -15 Q -25 -18 -12 -10" stroke="#1f1109" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+      <path d="M 12 -10 Q 25 -18 40 -15" stroke="#1f1109" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+      <!-- Reading Glasses -->
+      <g stroke="#ffd27a" stroke-width="2" fill="none">
+        <rect x="-42" y="-5" width="30" height="20" rx="5" fill="#ffffff" fill-opacity="0.15"/>
+        <rect x="12" y="-5" width="30" height="20" rx="5" fill="#ffffff" fill-opacity="0.15"/>
+        <line x1="-12" y1="5" x2="12" y2="5"/>
+        <line x1="-42" y1="5" x2="-62" y2="-2"/>
+        <line x1="42" y1="5" x2="62" y2="-2"/>
+      </g>
+
+      <!-- Eyes looking down at the ledger -->
+      <path d="M -37 5 Q -27 1 -17 5" stroke="#251206" stroke-width="2" fill="none"/>
+      <circle cx="-27" cy="7" r="3.5" fill="#251206"/>
+      <path d="M 17 5 Q 27 1 37 5" stroke="#251206" stroke-width="2" fill="none"/>
+      <circle cx="27" cy="7" r="3.5" fill="#251206"/>
+
+      <!-- Nose -->
+      <path d="M 0 -5 Q 2 15 -2 22 Q 4 24 8 22" stroke="#a45831" stroke-width="2.5" fill="none"/>
+
+      <!-- Mustache & Tight Mouth (Concerned, listening to "bhaiya thoda ruko") -->
+      <path d="M -30 32 Q 0 28 30 32 Q 20 40 0 38 Q -20 40 -30 32 Z" fill="#1f1109"/>
+      <line x1="-16" y1="44" x2="16" y2="44" stroke="#7a1a1c" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Left Arm & Hand holding phone handset to ear -->
+    <!-- Handset receiver at ear -->
+    <g transform="translate(95, 175) rotate(-18)">
+      <path d="M 10 0 C 0 -25 -20 -15 -25 10 L -20 70 C -15 95 5 100 15 80 L 10 50 L -5 40 L -5 30 L 10 20 Z" fill="url(#phoneBody)"/>
+      <ellipse cx="-15" cy="5" rx="14" ry="14" fill="#1f2937"/>
+      <ellipse cx="5" cy="75" rx="14" ry="14" fill="#1f2937"/>
+      <!-- Hand fingers wrapped around phone handset -->
+      <ellipse cx="-2" cy="38" rx="8" ry="14" fill="url(#p2skin)" transform="rotate(15)"/>
+      <ellipse cx="6" cy="45" rx="7" ry="12" fill="url(#p2skin)" transform="rotate(15)"/>
+    </g>
+
+    <!-- Coiled Telephone Wire connecting to base -->
+    <path d="M 105 270 Q 75 320 60 360 Q 40 400 35 430 Q 30 460 20 480" stroke="#111827" stroke-width="4.5" fill="none" stroke-dasharray="6 3"/>
+
+    <!-- Right Arm: Extending down to write in ledger -->
+    <path d="M 270 350 Q 290 420 220 460 L 175 440 Q 230 400 240 350 Z" fill="#e2d2ba"/>
+    <!-- Right Hand holding pen -->
+    <g transform="translate(155, 435)">
+      <ellipse cx="15" cy="15" rx="14" ry="10" fill="url(#p2skin)"/>
+      <!-- Blue Ballpoint Pen -->
+      <polygon points="5,5 35,-25 38,-22 8,8" fill="#1e40af"/>
+      <polygon points="5,5 8,8 2,9" fill="#ffd27a"/>
+      <circle cx="2" cy="9" r="1.5" fill="#111827"/>
+      <!-- Fingers gripping pen -->
+      <ellipse cx="12" cy="10" rx="6" ry="10" fill="url(#p2skin)" transform="rotate(-25)"/>
+      <ellipse cx="18" cy="12" rx="5" ry="9" fill="url(#p2skin)" transform="rotate(-25)"/>
+    </g>
+  </g>
+
+  <!-- Open Traditional Bahi-Khata (Red cloth Indian ledger) on Desk -->
+  <g transform="translate(210, 410) rotate(-4)">
+    <!-- Red Cloth Cover Backing -->
+    <rect x="-8" y="-6" width="376" height="172" fill="url(#bahiKhataCover)" rx="6" stroke="#ffd27a" stroke-width="1.5"/>
+    <line x1="180" y1="-6" x2="180" y2="166" stroke="#ffebaa" stroke-width="3"/> <!-- Central spine string binding -->
+
+    <!-- Left Page (Cream Paper) -->
+    <rect x="4" y="2" width="170" height="156" fill="url(#ledgerPaper)" rx="2"/>
+    <!-- Ledger Ruling & Entries -->
+    <line x1="35" y1="2" x2="35" y2="158" stroke="#ff4d6d" stroke-width="1" opacity="0.6"/> <!-- Red margin -->
+    <line x1="130" y1="2" x2="130" y2="158" stroke="#ff4d6d" stroke-width="0.8" opacity="0.6"/> <!-- Amount col -->
+    <g stroke="#94a3b8" stroke-width="0.6" opacity="0.6">
+      <line x1="8" y1="25" x2="170" y2="25"/>
+      <line x1="8" y1="45" x2="170" y2="45"/>
+      <line x1="8" y1="65" x2="170" y2="65"/>
+      <line x1="8" y1="85" x2="170" y2="85"/>
+      <line x1="8" y1="105" x2="170" y2="105"/>
+      <line x1="8" y1="125" x2="170" y2="125"/>
+      <line x1="8" y1="145" x2="170" y2="145"/>
+    </g>
+    <!-- Handwritten numbers / text in blue ink -->
+    <text x="40" y="40" font-family="'Caveat', cursive" font-size="13" fill="#1e3a8a">Bansal Stat. - ₹50,000</text>
+    <text x="135" y="40" font-family="'DM Sans', sans-serif" font-size="10" fill="#dc2626" font-weight="bold">PENDING</text>
+    <text x="40" y="60" font-family="'Caveat', cursive" font-size="13" fill="#1e3a8a">Khanna Motors - ₹2,10,000</text>
+    <text x="135" y="60" font-family="'DM Sans', sans-serif" font-size="10" fill="#dc2626" font-weight="bold">LATE 90D</text>
+    <text x="40" y="80" font-family="'Caveat', cursive" font-size="13" fill="#1e3a8a">Gupta Auto - ₹1,25,000</text>
+    <text x="135" y="80" font-family="'DM Sans', sans-serif" font-size="10" fill="#dc2626" font-weight="bold">LATE 72D</text>
+    <text x="40" y="100" font-family="'Caveat', cursive" font-size="13" fill="#1e3a8a">Shop Rent: ₹35,000 DUE</text>
+    <text x="40" y="120" font-family="'Caveat', cursive" font-size="13" fill="#1e3a8a">Staff Salaries: ₹45,000</text>
+
+    <!-- Right Page (Cream Paper) -->
+    <rect x="186" y="2" width="170" height="156" fill="url(#ledgerPaper)" rx="2"/>
+    <line x1="215" y1="2" x2="215" y2="158" stroke="#ff4d6d" stroke-width="1" opacity="0.6"/>
+    <line x1="310" y1="2" x2="310" y2="158" stroke="#ff4d6d" stroke-width="0.8" opacity="0.6"/>
+    <g stroke="#94a3b8" stroke-width="0.6" opacity="0.6">
+      <line x1="190" y1="25" x2="352" y2="25"/>
+      <line x1="190" y1="45" x2="352" y2="45"/>
+      <line x1="190" y1="65" x2="352" y2="65"/>
+      <line x1="190" y1="85" x2="352" y2="85"/>
+      <line x1="190" y1="105" x2="352" y2="105"/>
+      <line x1="190" y1="125" x2="352" y2="125"/>
+      <line x1="190" y1="145" x2="352" y2="145"/>
+    </g>
+    <text x="220" y="40" font-family="'Caveat', cursive" font-size="14" fill="#047857">Balance b/f ₹1,50,000</text>
+    <text x="220" y="60" font-family="'Caveat', cursive" font-size="14" fill="#b91c1c">Outflow this week: ₹55,000</text>
+    <text x="220" y="85" font-family="'Caveat', cursive" font-size="15" fill="#b91c1c" font-weight="bold">CASH SHORTAGE?!</text>
+  </g>
+
+  <!-- Landline Phone Base on Desk -->
+  <g transform="translate(60, 450)">
+    <rect x="0" y="0" width="110" height="85" fill="url(#phoneBody)" rx="8" stroke="#4b5563" stroke-width="1.5"/>
+    <!-- Cradle indent -->
+    <rect x="15" y="10" width="80" height="20" fill="#0f172a" rx="4"/>
+    <!-- Push Buttons / Dial Pad -->
+    <g fill="#9ca3af" transform="translate(20, 38)">
+      <circle cx="10" cy="8" r="5"/>
+      <circle cx="35" cy="8" r="5"/>
+      <circle cx="60" cy="8" r="5"/>
+      <circle cx="10" cy="24" r="5"/>
+      <circle cx="35" cy="24" r="5"/>
+      <circle cx="60" cy="24" r="5"/>
+      <circle cx="10" cy="38" r="5"/>
+      <circle cx="35" cy="38" r="5"/>
+      <circle cx="60" cy="38" r="5"/>
+    </g>
+    <!-- Blinking Red Message / Line Indicator -->
+    <circle cx="95" cy="20" r="4" fill="#ff4d6d">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
